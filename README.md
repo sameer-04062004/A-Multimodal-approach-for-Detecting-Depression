@@ -1,54 +1,23 @@
-# A-Multimodal-approach-for-Detecting-Depression
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/64346030/236112840-cc1bb8ec-9fc3-40b5-a33c-1bc62c6ee6cf.png" width=30%/>
+<h1 align="center">Multimodal Approach for Detecting Depression Using Physiological And Behavioural Data</h1>
+<h3 align="center">Are you interested in detecting depression with a more efficient and modern approach? </h3>
+<h4 align="center"> Traditionally, extensive clinical interviews were conducted to analyze the subject's responses to determine their mental state. However, we have developed a model that incorporates this approach by combining three modalities - Text, Audio, and Video. Our deep learning model assigns appropriate weights to each modality and generates a binary classification output of yes or no, indicating whether the patient is exhibiting depression symptoms.<h4>
+</p>
 
-This project is an AI-based multimodal depression detection system that analyzes multiple human behavior signals including text, audio, and video features. The system is based on the DAIC-WOZ dataset and uses machine learning/deep learning models to predict whether a person shows signs of depression.
+# How to Use the Files:
 
-The project extends an audio-only depression tendency detection approach into a multimodal framework by combining linguistic features from interview transcripts, acoustic features from speech, and visual/facial features from video recordings. Different models such as SVM, Random Forest, CNN, and LSTM with gating are used for individual modality analysis and final multimodal fusion.
+Ready to give our model a try? First, apply to the DAIC-WOZ Database to get access to download the dataset - (https://dcapswoz.ict.usc.edu/#:~:text=DAIC-WOZ%20Database,-This%20database%20contains&text=Data%20collected%20include%20audio%20and,human%20interviewer%20in%20another%20room). Make sure to copy the dataset folder to the correct location, and you're good to go! For an even easier experience, we recommend running the files on Google Colab.
 
-## Main Features
+# Files:
 
-- Text-based depression detection using interview transcripts
-- Audio-based depression detection using speech/acoustic features
-- Video-based depression detection using facial and behavioral features
-- Multimodal fusion using LSTM with gating mechanism
-- Binary classification: Depressed / Non-Depressed
-- Based on the DAIC-WOZ depression interview dataset
+Want to know what's included in our repository? Check out the following files:
 
-## Modalities Used
+* Dataset.ipynb: Get code snippets for obtaining data from the DAIC server, unzipping them, and arranging them in a user-friendly format.
+* SVM&RF_Text.ipynb: Run the SVM and RF models on the text modality.
+* SVM&RF_Audio.ipynb: Run the SVM and RF models on the audio modality.
+* Rf_prune.ipynb: Implement pruning on RFs.
+* CNN_Video.ipynb: Use the code snippet to run CNN on the video features.
+* LSTM_With_Gating_Sentence_Level.ipynb: Implement LSTM on all three modalities combined with gating at the sentence level. 
 
-1. Text Modality  
-   Uses transcript data to analyze language patterns related to depression.
-
-2. Audio Modality  
-   Uses acoustic speech features to detect vocal patterns linked with emotional and mental state.
-
-3. Video Modality  
-   Uses facial expression, gaze, head pose, and facial action unit features.
-
-4. Multimodal Fusion  
-   Combines text, audio, and video features for final depression prediction.
-
-## Dataset
-
-This project uses the DAIC-WOZ dataset. The dataset is not included in this repository because access requires official approval from USC/ICT.
-
-Users must apply for dataset access from the official DAIC-WOZ website and place the dataset in the required folder structure before running the notebooks.
-
-## Technologies Used
-
-- Python
-- NumPy
-- Pandas
-- scikit-learn
-- TensorFlow / Keras
-- NLTK
-- Gensim
-- Matplotlib
-- Google Colab
-
-## Project Purpose
-
-This project is developed as a Final Year Project for research and educational purposes. It is not intended to replace clinical diagnosis. The system only provides depression-related prediction support based on behavioral and physiological data.
-
-## Disclaimer
-
-This system is a research prototype and should not be used as a medical diagnostic tool. Depression diagnosis must always be performed by qualified mental health professionals.
+Ready to improve your depression detection skills? Give our multimodal approach a try and see what results you can achieve!
